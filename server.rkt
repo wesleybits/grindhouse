@@ -251,7 +251,7 @@
                   (title "Oops, Something's Missing!"))
             (body ,(top-bar "Wait! What?" "Sh*t, where did I put that?")
                   (div ([class "col-md-offset-2 col-md-8"])
-                       (p "Oh jeeze, the thing for that you wanted located at somplace isn't anywhere to be found!")
+                       (p "Oh jeeze, the thing that you wanted isn't anywhere to be found!")
                        (p "This is OK. Don't panic, maybe.")
                        (p "First try going back to the home page and force a refresh of the videos that Grindhouse is aware of.
                         If that doesn't work, try restarting the server. If " (i "that") " doesn't work, you're gonna have
@@ -353,7 +353,14 @@
                                                                  vids
                                                                  (if (= 1 vids)
                                                                      " movie)"
-                                                                     " movies)"))))))))))))))))
+                                                                     " movies)")))))))))))
+                       (div ([class "row"]
+                             [style "padding-top:10px"])
+                            (div ([class "col-md-9"])
+                                 (a ([href ,(embed/url force-refresh)]
+                                     [class "btn btn-default"])
+                                    "Force Refresh")))
+                       (div ([style "padding:10px 10px"])))))))
   (send/suspend/dispatch response-generator))
 
 ;;; Startup code!
@@ -370,5 +377,6 @@
                #:listen-ip #f
                #:port port
                #:command-line? #t
+               #:file-not-found-responder not-found
                #:extra-files-paths (list (build-path root)
                                          (build-path media-directory)))
