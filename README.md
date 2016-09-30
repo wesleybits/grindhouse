@@ -4,7 +4,7 @@ PRIVATE video access "web" app. Mostly because Dad wanted something
 like this and didn't know to ask for it. Just run it on some kind of
 unused computer you've got lying around while it's plugged into a TV.
 
-I know the EULA might come a-knocking about this thing, so I'll just
+I know the fuzz might come a-knocking about this thing, so I'll just
 point out that in no way is Grindhouse is even designed to run on the
 Internet at large. If you do it, or try to do it, it's your own damn
 fault if it sets fires or gets you into trouble.
@@ -39,7 +39,7 @@ of a video's info... if I get around to it.
 
 ## Quick-ish Start:
 
-Fist, find a computer lying around that nobody uses any more. You
+First, find a computer lying around that nobody uses any more. You
 don't need anything beefy, just enough to run some modern Linux distro
 that ships with a GUI and some kind of multi-monitor support.
 
@@ -85,7 +85,7 @@ Third, Fire it up:
 $~/grindhouse > sudo PORT=80 racket server.rkt
 ```
 
-Fouth: Kiss productivity goodbye!
+Fouth: Profit!
 
 Grab your phone or tablet, open a browser and point it to
 `http://Grindhouse` and you'll see your viewing options.
