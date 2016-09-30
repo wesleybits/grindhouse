@@ -39,7 +39,7 @@ of a video's info... if I get around to it.
 
 ## Quick-ish Start:
 
-Fist, find a computer lying around that nobody uses any more. You
+First, find a computer lying around that nobody uses any more. You
 don't need anything beefy, just enough to run some modern Linux distro
 that ships with a GUI and some kind of multi-monitor support.
 
@@ -85,7 +85,7 @@ Third, Fire it up:
 $~/grindhouse > sudo PORT=80 racket server.rkt
 ```
 
-Fouth: Kiss productivity goodbye!
+Fouth: Profit!
 
 Grab your phone or tablet, open a browser and point it to
 `http://Grindhouse` and you'll see your viewing options.
