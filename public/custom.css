@@ -1,0 +1,17 @@
+.nav > li {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 5px;
+}
+
+#top {
+    margin-top: 10px;
+    background: rgb(120, 140, 180);
+    color: rgb(225,240,240);
+}
+
+#movie-sidenav {
+    border-left: black;
+    border-left-width: thin;
+    border-left-style: solid;
+}
