@@ -82,7 +82,7 @@ Second, set it up! Here are some things to do in no particular order:
 
 Third, Fire it up:
 ```shell
-$~/grindhouse > sudo PORT=80 racket server.rkt
+$ sudo PORT=80 racket server.rkt
 ```
 
 Fouth: Profit!
