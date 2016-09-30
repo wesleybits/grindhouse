@@ -42,7 +42,7 @@
   (path-replace-extension p ""))
 
 (define (rx-extract-name str)
-  (regexp-match #px"((\\[[^\\]]*\\])?([^(\\[]*)(\\(|\\[\\d{3,4}p\\]|\\))?.?(\\[[^\\]]\\])?)"
+  (regexp-match #px"^(.*)\\..{3,4}$"
                 str))
 
 (define (rx-clean str)
@@ -50,10 +50,9 @@
 
 (define path->video-name (compose string-trim
                                   rx-clean
-                                  fourth
+                                  second
                                   rx-extract-name
                                   path->string
-                                  strip-extension
                                   last
                                   explode-path))
 
